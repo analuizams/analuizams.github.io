@@ -1,0 +1,44 @@
+body {
+    background-color: #F2E9E4;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-family: 'Philosopher', sans-serif;
+}
+
+.elementoslista {
+    font-size: 0.8em;
+}
+
+#nome {
+    text-align: center;
+
+}
+
+#foto {
+    float: left;
+    margin-bottom: 15px;
+    margin-left: 35px;
+    padding: 5px;
+    background-color: #C9ADA7;
+    border-radius: 200px;
+    
+}
+
+#foto img {
+    border-radius: 200px;
+}
+
+h3, ol, ul {
+    clear: both;
+}
+
+#intro {
+    float: right;
+    width: 40%;
+    margin-left: 35px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    line-height: 30px;
+}
