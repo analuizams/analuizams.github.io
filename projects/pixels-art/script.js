@@ -123,6 +123,22 @@ function generateColor() {
   }
 }
 
+function createColorBtn() {
+  const btnSection = document.querySelector('#button-section');
+  const colorBtn = document.createElement('button');
+  colorBtn.id = 'color-button';
+  colorBtn.innerText = 'Change Colors';
+  colorBtn.style.backgroundColor = 'black';
+  colorBtn.style.color = 'white';
+  colorBtn.style.borderRadius = '10px';
+  btnSection.appendChild(colorBtn);
+}
+
+function newColors() {
+  const colorbt = document.getElementById('color-button');
+  colorbt.addEventListener('click', generateColor);
+}
+
 window.onload = function () {
   createBtn();
   createInput();
@@ -130,7 +146,9 @@ window.onload = function () {
   generateColor();
   generateBoard();
   generateBoardBtn();
+  createColorBtn();
   selectColor();
   colorPixel();
   clearBoard();
+  newColors();
 };

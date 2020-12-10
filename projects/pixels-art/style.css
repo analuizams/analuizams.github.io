@@ -8,7 +8,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 15px;
-  width: 15%;
+  width: 25%;
 }
 
 .centered {
@@ -62,7 +62,7 @@ main {
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  width: 27%;
+  width: 45%;
 }
 
 .pink {
