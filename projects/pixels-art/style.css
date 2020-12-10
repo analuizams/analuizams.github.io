@@ -35,7 +35,8 @@ footer {
   bottom: 0;
   color: white;
   line-height: 10px;
-  position: absolute;
+  margin-top: 1000px;
+  position: fixed;
   text-align: center;
   width: 100%;
 }

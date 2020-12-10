@@ -65,7 +65,11 @@ function saveList() {
   saveBtn.addEventListener('click', function () {
     const tasks = document.getElementsByClassName('task');
     for (let index = 0; index < tasks.length; index += 1) {
-      localStorage.setItem(index, tasks[index].innerText);
+      const obj = {
+        text: tasks[index].innerText,
+        class: tasks[index].className,
+      };
+      localStorage.setItem(index, JSON.stringify(obj));
     }
   });
 }
@@ -74,8 +78,10 @@ function getList() {
   const tasks = document.getElementById('lista-tarefas');
   for (let index = 0; index < localStorage.length; index += 1) {
     const recListItem = document.createElement('li');
-    recListItem.innerText = localStorage.getItem(index);
-    recListItem.className = 'task';
+    const recoveredObj = JSON.parse(localStorage.getItem(index));
+    recListItem.innerText = recoveredObj.text;
+    recListItem.className = recoveredObj.class;
+    recListItem.classList.remove('selected');
     tasks.appendChild(recListItem);
   }
 }
@@ -92,6 +98,49 @@ function removeSelected() {
   });
 }
 
+function moveUp() {
+  const upBtn = document.getElementById('mover-cima');
+  upBtn.addEventListener('click', function () {
+    const selectedTask = document.querySelector('.selected');
+    let previousSib;
+    if (selectedTask) {
+      previousSib = selectedTask.previousElementSibling;
+    }
+    if (previousSib) {
+      const sib = {
+        text: previousSib.innerText,
+        class: previousSib.className,
+      };
+      previousSib.innerText = selectedTask.innerText;
+      previousSib.className = selectedTask.className;
+      selectedTask.innerText = sib.text;
+      selectedTask.className = sib.class;
+    }
+  });
+}
+
+function moveDown() {
+  const downBtn = document.getElementById('mover-baixo');
+  downBtn.addEventListener('click', function () {
+    const selectedTask = document.querySelector('.selected');
+    let nextSib;
+    if (selectedTask) {
+      nextSib = selectedTask.nextElementSibling;
+    }
+    if (nextSib) {
+      const nsib = {
+        text: nextSib.innerText,
+        class: nextSib.className,
+      };
+      nextSib.innerText = selectedTask.innerText;
+      nextSib.className = selectedTask.className;
+      selectedTask.innerText = nsib.text;
+      selectedTask.className = nsib.class;
+    }
+  });
+}
+
+
 window.onload = function () {
   addTask();
   selectTask();
@@ -101,4 +150,6 @@ window.onload = function () {
   saveList();
   getList();
   removeSelected();
+  moveDown();
+  moveUp();
 };
