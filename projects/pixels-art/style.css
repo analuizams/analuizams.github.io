@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(181, 192, 204);
+  background-color: rgb(210, 210, 211);
   font-family: -apple-system, Roboto, Oxygen, Open Sans, Helvetica Neue, sans-serif;
   margin: 0;
 }
@@ -31,9 +31,10 @@ body {
 }
 
 footer {
-  background-color: rgb(15, 21, 27);
+  background-color: rgb(22, 25, 29);
   bottom: 0;
   color: white;
+  line-height: 10px;
   position: absolute;
   text-align: center;
   width: 100%;
@@ -44,7 +45,7 @@ footer {
 }
 
 h1 {
-  background-color: rgb(15, 21, 27);
+  background-color:rgb(22, 25, 29);
   color: white;
   padding: 10px;
   text-align: center;

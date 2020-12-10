@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+}
+
+#acesse {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: Tahoma, sans-serif;
+  line-height: 20px;
+  margin-bottom: 3px;
+}
+
+article {
+  margin-bottom: 30px;
+  margin-right: 250px;
+  text-align: justify;
+}
+
+aside {
+  margin-right: 250px;
+  text-align: justify;
+}
+
+aside h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+#bh {
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+
+body {
+  background-color: rgb(253 , 251 , 251);
+  font-family: Georgia, serif;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+#cabecalho {
+  background-color: lightgrey;
+  border-bottom: 1px gray solid;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  height: 60px;
+  margin: 0 auto;
+  padding-top: 10px;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 15;
+}
+
+#contato {
+  text-align: center;
+  z-index: 16;
+}
+
+#contato h3 {
+  display: inline;
+}
+#descricao {
+  font-size: 16.5px;
+}
+
+#extra {
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+footer {
+  background-color: lightgray;
+  bottom: 0;
+  padding: 5px;
+  position: relative;
+  top: 200px;
+  width: 100vw;
+  z-index: 25;
+}
+
+footer , nav {
+  border-top: 1px gray solid;
+}
+
+#github a:hover img {
+  background-color: rgb(110 , 84 , 148);
+  border-radius: 20px;
+}
+
+#last {
+  padding-bottom: 7px;
+}
+
+#licoes {
+  border-left: 2px double grey;
+  display: block;
+  float: right;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  line-height: 32px;
+  margin-right: 0;
+  padding-bottom: 50px;
+  padding-top: 10px;
+  width: 210px;
+}
+
+#licoes h2 {
+  font-size: 16px;
+  font-weight: 1000;
+  line-height: 25px;
+  margin: 20px;
+  text-align: center;
+}
+
+#linkedin a:hover img {
+  background-color: rgb(0 , 119 , 181);
+  border-radius: 2px;
+}
+
+main {
+  margin-left: 240px;
+  margin-right: 10px;
+  position: relative;
+  top: 110px;
+}
+
+#minha_foto {
+  background-color: black;
+  border-radius: 10px;
+  display: block;
+  float: left;
+  margin-left: 25px;
+  margin-top: 140px;
+  z-index: 11;
+  width: 150px;
+}
+
+nav {
+  background-color: grey;
+  font-family: Roboto, sans-serif;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  width: 195px;
+  z-index: 9;
+}
+
+nav a:hover {
+  background-color: darkgray;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+nav ul {
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-top: 340px;
+  padding: 0;
+}
+
+nav li a {
+  color: white;
+  margin-left: 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: left;
+  text-decoration: none;
+  width: 100%;
+}
+
+nav ul li {
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  margin-left: 0;
+  padding-top: 12px;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 195px;
+}
+
+#projetos h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#projects {
+  background-color: lightgray;
+  border: 1px solid rgb(170, 169, 169);
+  border-radius: 150px;
+  color:rgb(14, 13, 13);
+  font-family: roboto, sans-serif;
+  font-size: 15px;
+  margin-left: 25px;
+  padding: 18px;
+  text-align: center;
+  width: 117px;
+}
+
+#projects p {
+  line-height: 27px;;
+}
+
+#rodape p {
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+}
+
+#sobre-mim {
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+#sobre-mim h2 {
+  font-size: 23px;
+  line-height: 60px;
+}
+
+table {
+  border: 2px solid grey;
+  font-size: 16px;
+  height: 175px;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 795px;
+}
+
+.table-hdivision {
+  border-bottom: 1px solid rgb(160 , 160 , 160);
+}
+
+.table-vdivision {
+  border-right: 1px solid rgb(160 , 160 , 160);
+}
+
+#titulo {
+  margin-top: 10px;
+}
+
+tr td {
+  height: 40px;
+  width: 180px;
+}
+
+#trybe h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.up-table {
+  font-weight: 600;
+}
